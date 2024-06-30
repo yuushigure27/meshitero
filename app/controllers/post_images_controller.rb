@@ -14,6 +14,9 @@ class PostImagesController < ApplicationController
   def show
   end
   
+  def index 
+    @post_images = PostImage.all
+  
   private
 
   def post_image_params
